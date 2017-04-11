@@ -13,3 +13,8 @@ body {
   display: inline-block;
   text-align: left;
 }
+
+.material-icons {
+  position: relative;
+  top: 8px;
+}
