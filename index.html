@@ -1,0 +1,55 @@
+<html>
+<head>
+  <!-- Material Design fonts -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+   <!-- Bootstrap -->
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+
+   <!-- Bootstrap Material Design -->
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-material-design.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/ripples.min.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/jquery.dropdown.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+   <!-- Material.js -->
+   <script src="./assets/js/material.js"></script>
+</head>
+
+<script>
+$.material.init()
+</script>
+<body>
+
+<img class="img-responsive logo" src="./assets/images/cerberus_logo.png"/>
+
+<div class="clearfix"></div>
+
+<div class="well page active login-box">
+    <form class="form-vertical" action="./core/login.php" method="post">
+    <fieldset>
+
+      <!-- E-MAIL -->
+      <div class="form-group label-static is-empty">
+        <label for="i2" class="control-label">E-mail</label>
+        <input type="email" class="form-control" id="input_email" name="input_email" placeholder="Insert your e-mail">
+        <!-- <p class="help-block"><code>Insert your e-mail</code></p> -->
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="form-group label-static is-empty">
+        <label for="i2" class="control-label">Password</label>
+        <input type="password" class="form-control" id="input_password" name="input_password" placeholder="Insert your password">
+        <!-- <p class="help-block"><code>Insert your password</code></p> -->
+
+        <!-- LOGIN BUTTON -->
+        <button type="submit" style="float: right; margin-top: 25px;" class="btn btn-raised btn-primary">LOGIN<div class="ripple-container"></div></a>
+      </div>
+    </fieldset>
+  </form>
+  </div>
+
+</body>
+</html>
