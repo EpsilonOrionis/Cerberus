@@ -48,8 +48,8 @@ $html = <<<EOF
          </div>
       </div>
 
-      <div style="position: fixed; bottom: 0">
-      <a href="javascript:void(0)" style="float: right; margin-right: 30px;" class="btn btn-primary btn-fab"><i class="material-icons">create</i><div class="ripple-container"></div></a>
+      <div style="position: fixed; bottom: 0; right: 0;">
+      <a href="javascript:void(0)" style="float: right; margin-right: 60px; margin-bottom: 40px;" class="btn btn-primary btn-fab"><i class="material-icons">create</i><div class="ripple-container"></div></a>
       </div>
    </body>
 </html>
