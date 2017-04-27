@@ -18,3 +18,10 @@ body {
   position: relative;
   top: 8px;
 }
+
+.blueprint {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    background: url('/cerberus/assets/images/blueprint.jpg') no-repeat;
+  }

@@ -22,9 +22,46 @@ $html = <<<EOF
       <!-- Material.js -->
       <script src="../assets/js/material.js"></script>
 
-      <script>
+      <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+      <!-- GRIDSTACK.JS -->
+      <link rel="stylesheet" href="../assets/dist/gridstack.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+      <script src="../assets/dist/gridstack.js"></script>
+      <script src="../assets/dist/gridstack.jQueryUI.js"></script>
+
+      <style type="text/css">
+          .grid-stack {
+              background: #2c3e50;
+          }
+
+          .grid-stack-item-content {
+              color: #2c3e50;
+              text-align: center;
+              background-color: #FFFFFF;
+          }
+      </style>
+
+
+      <script type="text/javascript">
+
+        $(function () {
+            var options = {
+                // turns animation on
+                animate: true,
+                cellHeight: 80,
+                verticalMargin: 10
+            };
+            $('.grid-stack').gridstack(options);
+        });
+</script>
+
+    <!--  <script>
          $.material.init()
-      </script>
+      </script>-->
 
       <script>
 
@@ -59,6 +96,20 @@ $html = <<<EOF
             <div class="ripple-container"></div>
          </a>
       </div>
+
+      <div class="grid-stack" data-gs-width="12">
+	<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
+	<div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="2" data-gs-y="4" data-gs-width="2" data-gs-height="4"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="0" data-gs-y="6" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="4" data-gs-y="6" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="8" data-gs-y="6" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+	<div class="grid-stack-item" data-gs-x="10" data-gs-y="6" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content"></div></div>
+</div>
    </body>
 </html>
 
